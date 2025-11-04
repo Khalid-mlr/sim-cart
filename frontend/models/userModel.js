@@ -1,8 +1,7 @@
-export const emptyUser = {
-  firstName: "",
-  lastName: "",
-  middleName: "",
-  birthDate: "",
-  email: "",
-  password: "",
-};
+export class User {
+  constructor(email, password, username = null) {
+    this.email = email;
+    this.password = password;
+    this.username = username;
+  }
+}
