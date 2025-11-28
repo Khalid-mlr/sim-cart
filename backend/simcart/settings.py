@@ -128,3 +128,6 @@ REST_FRAMEWORK = {
     )
 }
 
+MIDDLEWARE += [
+    'accounts.middleware.JWTAuthCookieMiddleware',
+]
